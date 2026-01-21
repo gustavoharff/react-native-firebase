@@ -8,7 +8,7 @@
   "scripts": {
     "build": "genversion --esm --semi lib/version.ts",
     "build:clean": "rimraf android/build && rimraf ios/build",
-    "compile": "bob build",
+    "compile": "rimraf dist && bob build",
     "prepare": "yarn run build && yarn compile"
   },
   "repository": {

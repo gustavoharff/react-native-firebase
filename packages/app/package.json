@@ -11,7 +11,7 @@
     "build:clean": "rimraf android/build && rimraf ios/build",
     "build:plugin": "rimraf plugin/build && tsc --build plugin",
     "lint:plugin": "eslint plugin/src/*",
-    "compile": "bob build",
+    "compile": "rimraf dist && bob build",
     "prepare": "npm run build && npm run build:plugin && npm run compile"
   },
   "repository": {
